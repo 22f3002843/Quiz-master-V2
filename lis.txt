@@ -1,0 +1,27 @@
+1. redis-server -- sudo apt install redis-server -y
+ how to start -- redis-server
+ how to stop -- sudo service redis-server stop(if you have closed the terminal) / ctrl+c
+
+2. Development smtp server - (MailHog) - https://github.com/mailhog/MailHog
+ cmds to install go - sudo apt-get -y install golang-go
+ cmd to install mailhog - go install github.com/mailhog/MailHog@latest
+ to starrt mailhog - ~/go/bin/MailHog
+
+3. similar to the DB Browser, for redis-server is REDIS INSIGHT - https://redis.io/insight/ 
+    install it in windows will work too, because it will use the ip address to communicate with the redis-server
+    by default the redis server is running on localhost:6379
+
+4. for communicating with the redis server we need the redis library,
+    we need to install it in the venv, pip install redis
+
+5. celery library - pip install celery
+
+
+
+### cmds to start the celery worker and beat for my app ###
+celery -A app.celery_app worker --loglevel=info     ---- this will start the worker  (1st)
+celery -A app.celery_app beat --loglevel=info     ---- this the task scheduler     (2nd)
+
+pip install flask-mail 
+
+to clear identifier in wsl --> find . -type f -name '*:Zone.Identifier' -delete
