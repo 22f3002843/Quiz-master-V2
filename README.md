@@ -21,6 +21,15 @@ QuizMaster V2 is a comprehensive web application designed for managing and condu
 
 This document provides instructions for setting up and running the QuizMaster application, including details for Redis and MailHog.
 
+## Installation
+
+Ensure you have the `requirements.txt` file. The recommended way to install the dependencies is using `uv pip` for a faster and efficient installation.
+
+### Install Dependencies via uv
+```bash
+uv pip install -r requirements.txt
+```
+
 ## Running the Application
 
 1. **Open Project**: Open the project folder in Visual Studio Code.
