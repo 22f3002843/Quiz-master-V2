@@ -17,6 +17,20 @@ QuizMaster V2 is a comprehensive web application designed for managing and condu
 - **Email Notifications**: Automated emails are sent to users at specified times.
 - **Caching with Redis**: Implemented Redis caching to enhance application performance and speed.
 
+## Tech Stack
+
+### Backend
+- **Flask**: A lightweight WSGI web application framework.
+- **Flask-RESTful**: Extension for building REST APIs quickly.
+- **SQLite**: Lightweight disk-based database for development.
+- **Celery**: Distributed task queue for handling asynchronous tasks and background jobs.
+- **Redis**: In-memory data structure store, used as a database, cache, and message broker.
+
+### Frontend
+- **Vue.js (v2)**: The Progressive JavaScript Framework.
+- **JavaScript**: Core logic and interactivity.
+- **HTML5 & CSS**: Structure and styling of the application.
+
 ---
 
 This document provides instructions for setting up and running the QuizMaster application, including details for Redis and MailHog.
